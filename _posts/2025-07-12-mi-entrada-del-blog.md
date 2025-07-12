@@ -8,27 +8,32 @@ image: /assets/images/entrada.jpg
 description: "Explora este artículo con consejos útiles y reflexiones para mejorar tu día a día."
 ---
 
-![Imagen destacada](/assets/images/entrada.jpg){: style="display: block; margin: 1em auto; max-width: 100%; height: auto;" }
+<!-- Imagen destacada al principio -->
+![Imagen destacada](/assets/images/e1.jpg){: style="display: block; margin: 1em auto; max-width: 100%; height: auto;" }
 
 Bienvenido a esta nueva entrada de **SantanaSmart**, un espacio creado para ayudarte, inspirarte y acompañarte en tu camino personal.
 
 ---
 
-## 🌱 Introducción
+<!-- Bloque tutorial: imagen - texto - imagen - texto -->
 
-A veces, una pequeña idea puede generar un gran cambio. En este artículo abordaremos un tema fundamental para quienes buscan crecer, aprender o superar desafíos.
+<!-- Primera imagen -->
+![Paso 1: Preparación](/assets/images/e2.jpg){: style="width: 100%; max-width: 600px; display: block; margin: 1em auto;" }
 
-## ✨ Puntos clave
+<!-- Texto correspondiente -->
+## Paso 1: Preparación
 
-- ✅ Consejo práctico n.º 1
-- ✅ Estrategia útil n.º 2
-- ✅ Ejemplo real que inspira
+Antes de comenzar, asegúrate de tener todo lo necesario. La preparación es clave para un buen resultado.
 
-## 📌 Reflexión final
+---
 
-Recuerda: no estás solo. Siempre hay recursos, personas y herramientas dispuestas a apoyarte. Este blog es uno de esos espacios.
+<!-- Segunda imagen -->
+![Paso 2: Ejecución](/assets/images/e3.jpg){: style="width: 100%; max-width: 600px; display: block; margin: 1em auto;" }
 
-Gracias por leer. Si esta entrada te fue útil, ¡compártela o deja un comentario!
+<!-- Texto correspondiente -->
+## Paso 2: Ejecución
+
+Ahora que tienes todo listo, sigue los pasos indicados cuidadosamente para evitar errores.
 
 ---
 
