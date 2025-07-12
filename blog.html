@@ -1,0 +1,19 @@
+---
+layout: default
+title: Blog
+permalink: /blog/
+---
+
+<h1>Entradas del Blog</h1>
+
+<ul>
+  {% for post in site.posts %}
+    <li>
+      {% if post.image %}
+        <img src="{{ post.image }}" alt="{{ post.title }}" style="width: 120px; vertical-align: middle; margin-right: 10px;">
+      {% endif %}
+      <a href="{{ post.url }}">{{ post.title }}</a>
+      <span style="color: gray;">({{ post.date | date: "%Y-%m-%d" }})</span>
+    </li>
+  {% endfor %}
+</ul>
