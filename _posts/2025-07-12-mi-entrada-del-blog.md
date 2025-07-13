@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "Título de la Entrada del Blog"
 date: 2025-07-11 10:00:00 +0000
 author: Juan Pérez
