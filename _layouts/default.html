@@ -1,4 +1,23 @@
-<header>
-  <img src="{{ '/assets/images/logo.jpg' | relative_url }}" alt="Logo de SANTANASMART" width="150">
-  <h1>{{ site.title }}</h1>
-</header>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+  <header style="text-align: center; padding: 2rem 1rem;">
+    <img src="{{ '/assets/images/logo.jpg' | relative_url }}" alt="Logo de SANTANASMART" width="150" style="max-width: 100%; height: auto;">
+    <h1 style="margin-top: 1rem;">{{ site.title }}</h1>
+  </header>
+
+  <main style="max-width: 800px; margin: 0 auto; padding: 1rem;">
+    {{ content }}
+  </main>
+
+  <footer style="text-align: center; padding: 1rem; font-size: 0.9rem; color: #777;">
+    © {{ site.time | date: '%Y' }} {{ site.title }}. Todos los derechos reservados.
+  </footer>
+</body>
+</html>
