@@ -4,6 +4,10 @@
   <meta charset="UTF-8" />
   <title>{{ page.title }} | {{ site.title }}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  <!-- Fuente Roboto desde Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  
   <style>
     /* Reset básico */
     body, h1, ul, li, a, footer, header, main, nav {
@@ -16,10 +20,10 @@
     }
 
     body {
-      font-family: 'Courier New', Courier, monospace;
+      font-family: 'Roboto', sans-serif;
       background-color: #f4ecd8; /* sepia claro */
       color: #000000; /* negro */
-      line-height: 1.5;
+      line-height: 1.6;
       padding: 1rem;
       min-height: 100vh;
       box-sizing: border-box;
@@ -28,9 +32,11 @@
     a {
       color: #0047ab; /* azul fuerte */
       text-decoration: none;
+      transition: color 0.3s ease;
     }
     a:hover, a:focus {
       text-decoration: underline;
+      color: #002f6c;
       outline: none;
     }
 
@@ -51,12 +57,11 @@
       justify-content: center;
       gap: 1.5rem;
       padding: 0.5rem 0;
-      font-weight: bold;
-      flex-wrap: wrap; /* permite que el menú se ajuste en pantallas pequeñas */
+      font-weight: 700;
+      flex-wrap: wrap;
     }
 
     nav a {
-      font-family: 'Courier New', Courier, monospace;
       font-size: 1rem;
       color: #0047ab;
     }
@@ -64,20 +69,19 @@
     main {
       max-width: 700px;
       margin: 0 auto;
-      padding: 1rem;
+      padding: 1.2rem 1rem;
       background-color: #fffdf5; /* casi blanco */
-      border-radius: 4px;
+      border-radius: 6px;
       box-shadow: 0 0 8px #ccc8b8;
-      font-size: 1rem;
-      white-space: pre-wrap; /* mantiene formato */
+      font-size: 1.05rem;
+      white-space: pre-wrap;
     }
 
     footer {
       text-align: center;
-      font-size: 0.85rem;
+      font-size: 0.9rem;
       color: #555;
       margin-top: 2rem;
-      font-family: 'Courier New', Courier, monospace;
       user-select: none;
     }
 
@@ -90,11 +94,11 @@
         gap: 1rem;
       }
       nav a {
-        font-size: 0.9rem;
+        font-size: 0.95rem;
       }
       main {
-        padding: 0.8rem;
-        font-size: 0.95rem;
+        padding: 1rem 0.8rem;
+        font-size: 1rem;
       }
     }
 
@@ -102,7 +106,7 @@
     @media (min-width: 601px) and (max-width: 900px) {
       main {
         max-width: 90%;
-        font-size: 1rem;
+        font-size: 1.05rem;
       }
     }
   </style>
