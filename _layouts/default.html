@@ -4,110 +4,89 @@
   <meta charset="UTF-8" />
   <title>{{ page.title }} | {{ site.title }}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
   <style>
-    /* Reset */
-    *, *::before, *::after {
-      box-sizing: border-box;
-    }
-    body {
-      font-family: 'Cardo', serif;
+    /* Reset básico */
+    body, h1, ul, li, a, footer, header, main, nav {
       margin: 0;
       padding: 0;
-      background: #f5f1e9; /* tono pergamino */
-      color: #4b3b2b; /* marrón oscuro */
-      line-height: 1.75;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+      vertical-align: baseline;
+    }
+
+    body {
+      font-family: 'Courier New', Courier, monospace;
+      background-color: #000000; /* negro puro */
+      color: #33ff33; /* verde neón clásico */
+      line-height: 1.4;
+      padding: 1rem;
     }
 
     a {
-      color: #6f4e37; /* marrón cálido */
+      color: #66ff66; /* verde claro para links */
       text-decoration: none;
-      border-bottom: 1px solid transparent;
-      transition: border-color 0.3s ease, color 0.3s ease;
     }
     a:hover, a:focus {
-      color: #3e2f1c;
-      border-bottom-color: #3e2f1c;
+      text-decoration: underline;
+      color: #99ff99;
       outline: none;
     }
 
     header {
-      background: #faf5eb;
-      border-bottom: 2px solid #d4c4a8; /* borde tipo columna */
-      padding: 2rem 2rem;
-      max-width: 960px;
-      margin: 0 auto;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      font-weight: 700;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-    }
-    header a.logo-link {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-      color: #4b3b2b;
-      font-size: 1.5rem;
-      text-decoration: none;
+      text-align: center;
+      margin-bottom: 1rem;
     }
     header img {
-      max-height: 50px;
-      filter: sepia(0.3) saturate(1.2);
-      user-select: none;
+      max-width: 150px;
+      height: auto;
+      display: block;
+      margin: 0 auto 0.5rem;
+      filter: drop-shadow(0 0 3px #33ff33);
     }
 
     nav ul {
       list-style: none;
-      margin: 0;
-      padding: 0;
       display: flex;
-      gap: 2.5rem;
-      font-family: 'Cardo', serif;
-      font-weight: 400;
-      font-size: 1.1rem;
+      justify-content: center;
+      gap: 1.5rem;
+      padding: 0.5rem 0;
+      font-weight: bold;
     }
-    nav li {
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
+
+    nav a {
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 1rem;
+      color: #33ff33;
     }
 
     main {
-      max-width: 720px;
-      margin: 3rem auto 4rem;
-      padding: 2rem 2rem 3rem;
-      background: #fffef6; /* mármol claro */
-      border: 1px solid #d4c4a8;
-      border-radius: 10px;
-      box-shadow: 0 5px 15px rgb(184 166 138 / 0.2);
-      font-size: 1.1rem;
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 1rem;
+      border: 1px solid #33ff33;
+      border-radius: 4px;
+      box-shadow: 0 0 10px #33ff33aa;
+      background-color: #001100; /* verde muy oscuro de fondo para main */
+      white-space: pre-wrap; /* para mantener formato estilo consola */
+      font-size: 1rem;
     }
 
     footer {
       text-align: center;
-      padding: 1.5rem 1rem 3rem;
-      font-size: 0.9rem;
-      color: #6f5f44;
-      font-family: 'Cardo', serif;
-      font-weight: 400;
-      max-width: 960px;
-      margin: 0 auto;
+      font-size: 0.85rem;
+      color: #33cc33;
+      margin-top: 2rem;
+      font-family: 'Courier New', Courier, monospace;
       user-select: none;
-      letter-spacing: 0.03em;
     }
   </style>
 </head>
 <body>
-
   <header>
-    <a href="{{ '/' | relative_url }}" class="logo-link" aria-label="Ir al inicio">
-      <img src="{{ '/assets/images/logo.jpg' | relative_url }}" alt="Logo de SANTANASMART" />
-      {{ site.title }}
+    <a href="{{ '/' | relative_url }}">
+      <img src="{{ '/assets/images/logo.jpg' | relative_url }}" alt="Logo de {{ site.title }}" />
     </a>
-
     <nav aria-label="Navegación principal">
       <ul>
         <li><a href="{{ '/' | relative_url }}">Inicio</a></li>
@@ -118,13 +97,13 @@
     </nav>
   </header>
 
-  <main tabindex="-1">
+  <main>
     {{ content }}
   </main>
 
   <footer>
     © {{ site.time | date: '%Y' }} {{ site.title }}. Todos los derechos reservados.
   </footer>
-
 </body>
 </html>
+
