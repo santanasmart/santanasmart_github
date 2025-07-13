@@ -2,6 +2,7 @@
 layout: home
 title: Bienvenido
 ---
+<img src="{{ '/assets/images/logo.jpg' | relative_url }}" alt="Logo de mi sitio" width="150">
 
 # ¡Hola!
 
