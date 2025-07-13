@@ -1,6 +1,6 @@
 ---
 layout: home
-title: Bienvenido
+title: El blog del conocimiento
 ---
 <img src="{{ '/assets/images/logo.jpg' | relative_url }}" alt="Logo de mi sitio" width="150">
 
