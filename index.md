@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: default
 title: El blog del conocimiento
 ---
 # ¡Hola!
