@@ -1,59 +1,112 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>{{ page.title }} | {{ site.title }}</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
   <style>
+    /* Reset y base */
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
     body {
       font-family: 'Inter', sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f9f9f9;
-      color: #333;
-    }
-    header {
-      text-align: center;
-      padding: 2rem 1rem;
-      background-color: #fff;
-      border-bottom: 1px solid #eee;
-    }
-    main {
-      max-width: 800px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-      background-color: #fff;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.03);
-    }
-    footer {
-      text-align: center;
-      padding: 1rem;
-      font-size: 0.9rem;
-      color: #777;
-      margin-top: 2rem;
+      background-color: #f4f6f8;
+      color: #222;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
     }
     a {
-      color: #007acc;
+      color: #0052cc;
       text-decoration: none;
+      transition: color 0.3s ease;
     }
-    a:hover {
+    a:hover, a:focus {
+      color: #003d99;
+      outline: none;
       text-decoration: underline;
+    }
+
+    header {
+      background: #fff;
+      border-bottom: 1px solid #e1e4e8;
+      padding: 1.5rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 960px;
+      margin: 0 auto;
+    }
+    header a.logo-link {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    header img {
+      max-height: 48px;
+      display: block;
+      user-select: none;
+    }
+    header h1 {
+      font-weight: 600;
+      font-size: 1.5rem;
+      color: #111;
+      margin: 0;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 2rem;
+    }
+    nav li {
+      font-weight: 500;
+      font-size: 1rem;
+    }
+
+    main {
+      max-width: 720px;
+      margin: 3rem auto 4rem;
+      padding: 0 1rem;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 3px 10px rgb(0 0 0 / 0.1);
+      min-height: 60vh;
+      transition: box-shadow 0.3s ease;
+    }
+    main:focus-within {
+      box-shadow: 0 4px 14px rgb(0 0 0 / 0.15);
+      outline: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem 1rem 3rem;
+      font-size: 0.9rem;
+      color: #6b7280; /* gris suave */
+      font-weight: 400;
+      max-width: 960px;
+      margin: 0 auto;
+      user-select: none;
     }
   </style>
 </head>
 <body>
 
-  <!-- CABECERA -->
   <header>
-    <a href="{{ '/' | relative_url }}">
-      <img src="{{ '/assets/images/logo.jpg' | relative_url }}" alt="Logo de SANTANASMART" style="max-width: 150px; height: auto;">
+    <a href="{{ '/' | relative_url }}" class="logo-link" aria-label="Ir al inicio">
+      <img src="{{ '/assets/images/logo.jpg' | relative_url }}" alt="Logo de SANTANASMART" />
+      <h1>{{ site.title }}</h1>
     </a>
-    <h1>{{ site.title }}</h1>
 
-    <nav style="margin-top: 1rem;">
-      <ul style="list-style: none; padding: 0; display: flex; justify-content: center; gap: 1.5rem; margin: 0;">
+    <nav aria-label="Navegación principal">
+      <ul>
         <li><a href="{{ '/' | relative_url }}">Inicio</a></li>
         <li><a href="{{ '/blog.html' | relative_url }}">Entradas</a></li>
         <li><a href="{{ '/about' | relative_url }}">Sobre mí</a></li>
@@ -62,12 +115,13 @@
     </nav>
   </header>
 
-  <main>
+  <main tabindex="-1">
     {{ content }}
   </main>
 
   <footer>
     © {{ site.time | date: '%Y' }} {{ site.title }}. Todos los derechos reservados.
   </footer>
+
 </body>
 </html>
