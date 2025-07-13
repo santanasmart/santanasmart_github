@@ -17,19 +17,20 @@
 
     body {
       font-family: 'Courier New', Courier, monospace;
-      background-color: #000000; /* negro puro */
-      color: #33ff33; /* verde neón clásico */
-      line-height: 1.4;
+      background-color: #f4ecd8; /* sepia claro */
+      color: #000000; /* negro */
+      line-height: 1.5;
       padding: 1rem;
+      min-height: 100vh;
+      box-sizing: border-box;
     }
 
     a {
-      color: #66ff66; /* verde claro para links */
+      color: #0047ab; /* azul fuerte */
       text-decoration: none;
     }
     a:hover, a:focus {
       text-decoration: underline;
-      color: #99ff99;
       outline: none;
     }
 
@@ -42,7 +43,6 @@
       height: auto;
       display: block;
       margin: 0 auto 0.5rem;
-      filter: drop-shadow(0 0 3px #33ff33);
     }
 
     nav ul {
@@ -52,33 +52,58 @@
       gap: 1.5rem;
       padding: 0.5rem 0;
       font-weight: bold;
+      flex-wrap: wrap; /* permite que el menú se ajuste en pantallas pequeñas */
     }
 
     nav a {
       font-family: 'Courier New', Courier, monospace;
       font-size: 1rem;
-      color: #33ff33;
+      color: #0047ab;
     }
 
     main {
       max-width: 700px;
       margin: 0 auto;
       padding: 1rem;
-      border: 1px solid #33ff33;
+      background-color: #fffdf5; /* casi blanco */
       border-radius: 4px;
-      box-shadow: 0 0 10px #33ff33aa;
-      background-color: #001100; /* verde muy oscuro de fondo para main */
-      white-space: pre-wrap; /* para mantener formato estilo consola */
+      box-shadow: 0 0 8px #ccc8b8;
       font-size: 1rem;
+      white-space: pre-wrap; /* mantiene formato */
     }
 
     footer {
       text-align: center;
       font-size: 0.85rem;
-      color: #33cc33;
+      color: #555;
       margin-top: 2rem;
       font-family: 'Courier New', Courier, monospace;
       user-select: none;
+    }
+
+    /* Ajustes para móviles */
+    @media (max-width: 600px) {
+      body {
+        padding: 0.5rem;
+      }
+      nav ul {
+        gap: 1rem;
+      }
+      nav a {
+        font-size: 0.9rem;
+      }
+      main {
+        padding: 0.8rem;
+        font-size: 0.95rem;
+      }
+    }
+
+    /* Ajustes para tablets */
+    @media (min-width: 601px) and (max-width: 900px) {
+      main {
+        max-width: 90%;
+        font-size: 1rem;
+      }
     }
   </style>
 </head>
@@ -106,4 +131,5 @@
   </footer>
 </body>
 </html>
+
 
