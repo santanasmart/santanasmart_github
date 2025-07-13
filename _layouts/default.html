@@ -4,58 +4,60 @@
   <meta charset="UTF-8" />
   <title>{{ page.title }} | {{ site.title }}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
   <style>
-    /* Reset y base */
+    /* Reset */
     *, *::before, *::after {
       box-sizing: border-box;
     }
     body {
-      font-family: 'Inter', sans-serif;
+      font-family: 'Cardo', serif;
       margin: 0;
       padding: 0;
-      background-color: #f4f6f8;
-      color: #222;
-      line-height: 1.6;
+      background: #f5f1e9; /* tono pergamino */
+      color: #4b3b2b; /* marrón oscuro */
+      line-height: 1.75;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
     }
+
     a {
-      color: #0052cc;
+      color: #6f4e37; /* marrón cálido */
       text-decoration: none;
-      transition: color 0.3s ease;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.3s ease, color 0.3s ease;
     }
     a:hover, a:focus {
-      color: #003d99;
+      color: #3e2f1c;
+      border-bottom-color: #3e2f1c;
       outline: none;
-      text-decoration: underline;
     }
 
     header {
-      background: #fff;
-      border-bottom: 1px solid #e1e4e8;
-      padding: 1.5rem 2rem;
+      background: #faf5eb;
+      border-bottom: 2px solid #d4c4a8; /* borde tipo columna */
+      padding: 2rem 2rem;
+      max-width: 960px;
+      margin: 0 auto;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      max-width: 960px;
-      margin: 0 auto;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
     }
     header a.logo-link {
       display: flex;
       align-items: center;
       gap: 1rem;
+      color: #4b3b2b;
+      font-size: 1.5rem;
+      text-decoration: none;
     }
     header img {
-      max-height: 48px;
-      display: block;
+      max-height: 50px;
+      filter: sepia(0.3) saturate(1.2);
       user-select: none;
-    }
-    header h1 {
-      font-weight: 600;
-      font-size: 1.5rem;
-      color: #111;
-      margin: 0;
     }
 
     nav ul {
@@ -63,37 +65,38 @@
       margin: 0;
       padding: 0;
       display: flex;
-      gap: 2rem;
+      gap: 2.5rem;
+      font-family: 'Cardo', serif;
+      font-weight: 400;
+      font-size: 1.1rem;
     }
     nav li {
-      font-weight: 500;
-      font-size: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
     }
 
     main {
       max-width: 720px;
       margin: 3rem auto 4rem;
-      padding: 0 1rem;
-      background: #fff;
+      padding: 2rem 2rem 3rem;
+      background: #fffef6; /* mármol claro */
+      border: 1px solid #d4c4a8;
       border-radius: 10px;
-      box-shadow: 0 3px 10px rgb(0 0 0 / 0.1);
-      min-height: 60vh;
-      transition: box-shadow 0.3s ease;
-    }
-    main:focus-within {
-      box-shadow: 0 4px 14px rgb(0 0 0 / 0.15);
-      outline: none;
+      box-shadow: 0 5px 15px rgb(184 166 138 / 0.2);
+      font-size: 1.1rem;
     }
 
     footer {
       text-align: center;
-      padding: 1rem 1rem 3rem;
+      padding: 1.5rem 1rem 3rem;
       font-size: 0.9rem;
-      color: #6b7280; /* gris suave */
+      color: #6f5f44;
+      font-family: 'Cardo', serif;
       font-weight: 400;
       max-width: 960px;
       margin: 0 auto;
       user-select: none;
+      letter-spacing: 0.03em;
     }
   </style>
 </head>
@@ -102,7 +105,7 @@
   <header>
     <a href="{{ '/' | relative_url }}" class="logo-link" aria-label="Ir al inicio">
       <img src="{{ '/assets/images/logo.jpg' | relative_url }}" alt="Logo de SANTANASMART" />
-      <h1>{{ site.title }}</h1>
+      {{ site.title }}
     </a>
 
     <nav aria-label="Navegación principal">
@@ -124,6 +127,4 @@
   </footer>
 
 </body>
-</html>
-
 </html>
