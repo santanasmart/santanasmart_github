@@ -9,13 +9,13 @@ description: "Cuando GitHub no te permite activar o 'enforce HTTPS' en tu reposi
 ---
 
 <!-- Imagen destacada al principio -->
-![Imagen destacada](/assets/images/e21.JPG){: style="display: block; margin: 1em auto; max-width: 100%; height: auto;" }
+![Imagen destacada](/assets/images/e21.jpg){: style="display: block; margin: 1em auto; max-width: 100%; height: auto;" }
 
 Bienvenido a esta nueva entrada de **SantanaSmart**, un espacio creado para ayudarte, inspirarte y acompañarte en tu camino personal.
 
 ---
 <!-- Primera imagen -->
-![Paso 1: Preparación](/assets/images/e22.JPG){: style="width: 100%; max-width: 600px; display: block; margin: 1em auto;" }
+![Paso 1: Preparación](/assets/images/e22.jpg){: style="width: 100%; max-width: 600px; display: block; margin: 1em auto;" }
 
 ## Paso 1: Preparación
 
@@ -23,7 +23,7 @@ Antes de comenzar, asegúrate de tener todo lo necesario. La preparación es cla
 
 ---
 <!-- Segunda imagen -->
-![Paso 2: Ejecución](/assets/images/e23.JPG){: style="width: 100%; max-width: 600px; display: block; margin: 1em auto;" }
+![Paso 2: Ejecución](/assets/images/e23.jpg){: style="width: 100%; max-width: 600px; display: block; margin: 1em auto;" }
 
 ## Paso 2: Ejecución
 
