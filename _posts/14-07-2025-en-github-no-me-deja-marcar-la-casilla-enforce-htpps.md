@@ -4,7 +4,7 @@ title: "El perro del hortelano"
 date: 2025-07-11 10:00:00 +0000
 author: Juan Pérez
 categories: [blog]
-image: /assets/images/entrada.jpg
+image: /assets/images/e23.jpg
 description: "Explora este artículo con consejos útiles y reflexiones para mejorar tu día a día."
 ---
 
