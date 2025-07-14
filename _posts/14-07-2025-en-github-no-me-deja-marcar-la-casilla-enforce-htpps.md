@@ -1,11 +1,11 @@
 ---
 layout: default
-title: "En github no me deja marcar la casilla enforce htpps"
-date: 14/07/2025
+title: "En GitHub no me deja marcar la casilla enforce HTTPS"
+date: 2025-07-14 10:00:00 +0000
 author: Perez
 categories: [blog]
-image: /assets/images/e21.JPG
-description: "Cuando GitHub no te permite activar o "enforce HTTPS" (forzar HTTPS) en tu repositorio de GitHub Pages, puede deberse a una de las siguientes razones comunes:"
+image: /assets/images/21.JPG
+description: "Cuando GitHub no te permite activar o 'enforce HTTPS' en tu repositorio de GitHub Pages, puede deberse a varias razones comunes."
 ---
 
 <!-- Imagen destacada al principio -->
