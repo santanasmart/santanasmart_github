@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "El fantasma de la opera"
+title: "El perro del hortelano"
 date: 2025-07-11 10:00:00 +0000
 author: Juan Pérez
 categories: [blog]
