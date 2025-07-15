@@ -12,7 +12,7 @@ title: Entradas
         <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
       </h2>
       <p style="font-size: 0.9rem; color: #666;">
-        {{ post.date | date: "%d %B %Y" }} — por {{ post.author }}
+        {{ post.date | date: "%d %B %Y" }}{% if post.author %} — por {{ post.author }}{% endif %}
       </p>
       {% if post.image %}
         <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" style="max-width: 100%; height: auto; margin: 1rem 0;" />
@@ -22,3 +22,4 @@ title: Entradas
     </li>
   {% endfor %}
 </ul>
+
