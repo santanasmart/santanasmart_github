@@ -9,10 +9,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
 
   <style>
-    /* Reset y base */
     *, *::before, *::after {
       box-sizing: border-box;
     }
+
     body {
       margin: 0;
       font-family: 'Inter', sans-serif;
@@ -29,6 +29,7 @@
       text-decoration: none;
       transition: color 0.2s ease;
     }
+
     a:hover, a:focus {
       color: #0051a3;
       outline: none;
@@ -37,7 +38,7 @@
 
     header {
       background: #fff;
-      box-shadow: 0 2px 4px rgb(0 0 0 / 0.05);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
       padding: 1rem 2rem;
       position: sticky;
       top: 0;
@@ -50,6 +51,14 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    nav .logo {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      margin-bottom: 1rem;
     }
 
     nav .logo img {
@@ -61,6 +70,11 @@
       list-style: none;
       display: flex;
       gap: 1.5rem;
+      padding: 0;
+      margin: 0;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 100%;
     }
 
     nav li {
@@ -84,24 +98,19 @@
       user-select: none;
     }
 
-    /* Responsive */
-    @media (max-width: 700px) {
-      nav ul {
-        gap: 1rem;
-      }
-      nav .logo img {
-        height: 35px;
-      }
-    }
-
-    @media (max-width: 480px) {
+    @media (min-width: 700px) {
       nav {
-        flex-direction: column;
-        gap: 0.8rem;
+        flex-direction: row;
       }
+
+      nav .logo {
+        width: auto;
+        margin-bottom: 0;
+      }
+
       nav ul {
-        flex-wrap: wrap;
-        justify-content: center;
+        justify-content: flex-end;
+        width: auto;
       }
     }
   </style>
@@ -110,9 +119,11 @@
 
 <header>
   <nav>
-    <a href="{{ '/' | relative_url }}" class="logo" aria-label="Inicio">
-      <img src="{{ '/assets/images/logo.jpg' | relative_url }}" alt="Logo de {{ site.title }}" />
-    </a>
+    <div class="logo">
+      <a href="{{ '/' | relative_url }}" aria-label="Inicio">
+        <img src="{{ '/assets/images/logo.jpg' | relative_url }}" alt="Logo de {{ site.title }}" />
+      </a>
+    </div>
     <ul role="menubar" aria-label="Menú principal">
       <li role="none"><a role="menuitem" href="{{ '/' | relative_url }}">Inicio</a></li>
       <li role="none"><a role="menuitem" href="{{ '/blog.html' | relative_url }}">Entradas</a></li>
