@@ -4,7 +4,7 @@ title: "Cómo activar Enforce HTTPS en GitHub Pages"
 date: 2025-07-15 09:00:00 +0000
 author: Juan Pérez
 categories: [tutorial, github, seguridad]
-image: /assets/images/github-pages.jpg
+image: /assets/images/e34.jpg
 description: "Guía paso a paso para activar el HTTPS forzado en tu sitio de GitHub Pages y mejorar la seguridad."
 ---
 
