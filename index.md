@@ -9,7 +9,7 @@ permalink: /
 
 ¿Quieres contactarme? Ve a la [página de contacto](/contacto).
 
-# 🏭 Bienvenidos a SantanaMotors
+# 🏭 Bienvenidos a SantanaSmart
 
 ![Fábrica moderna](https://images.pexels.com/photos/209251/pexels-photo-209251.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=400)
 
