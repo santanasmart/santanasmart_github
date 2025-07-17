@@ -1,14 +1,9 @@
-title: SantanaSmart 
-description: Un blog simple hecho con Jekyll
-author: Juan Pérez
-email: ejemplo@email.com
-baseurl: "" # si es tuusuario.github.io
-url: "https://tuusuario.github.io"
-
-theme: minima
-plugins:
-  - jekyll-feed
-
-collections:
-  pages:
-    output: true
+title: SantanaMotors
+description: Empresa de asesoría industrial especializada en apoyar a startups y empresas consolidadas del parque empresarial de Linares. Innovación, eficiencia y desarrollo tecnológico.
+keywords: asesoría industrial, parque empresarial Linares, industria, automatización, empresas tecnológicas, ingeniería, eficiencia industrial
+author:
+  name: SantanaMotors
+  email: info@santanamotors.com
+  twitter: santanamotors
+url: "https://www.santanasmart.com"
+image: /assets/img/santanamotors-og.jpg
