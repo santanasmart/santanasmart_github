@@ -40,7 +40,7 @@ Talleres especializados en robótica, electrónica aplicada, mantenimiento indus
 
 ---
 
-## 🌐 ¿Por qué SantanaMotors?
+## 🌐 ¿Por qué SantanaSmart?
 
 ![Equipo de trabajo](https://images.pexels.com/photos/4164059/pexels-photo-4164059.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=400)
 
