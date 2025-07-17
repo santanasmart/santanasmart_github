@@ -15,7 +15,7 @@ permalink: /
 
 ### Asesoría Industrial Inteligente para Empresas que Quieren Crecer
 
-En **SantanaMotors**, creemos que el verdadero motor del desarrollo industrial es la **innovación aplicada con estrategia**. Somos una empresa especializada en brindar **servicios de asesoría industrial**, con un enfoque personalizado en **startups**, **pymes industriales** y **empresas tecnológicas** ubicadas en el **Parque Empresarial de Linares** y alrededores.
+En **SantanaSmart**, creemos que el verdadero motor del desarrollo industrial es la **innovación aplicada con estrategia**. Somos una empresa especializada en brindar **servicios de asesoría industrial**, con un enfoque personalizado en **startups**, **pymes industriales** y **empresas tecnológicas** ubicadas en el **Parque Empresarial de Linares** y alrededores.
 
 ---
 
@@ -54,7 +54,7 @@ Talleres especializados en robótica, electrónica aplicada, mantenimiento indus
 ## 🤝 Hablemos
 
 ¿Estás iniciando un nuevo proyecto industrial o quieres modernizar tu empresa actual?  
-En **SantanaMotors** te ayudamos a dar el siguiente paso con seguridad, estrategia y tecnología.
+En **SantanaSmart** te ayudamos a dar el siguiente paso con seguridad, estrategia y tecnología.
 
 📩 Contáctanos hoy y agenda una reunión sin compromiso.
 
