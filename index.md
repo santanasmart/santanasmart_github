@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Bienvenidos a SantanaMotors
+title: Bienvenidos a SantanaSmart
 description: Servicios de asesoría industrial en Linares para startups y empresas del Parque Empresarial. Automatización, digitalización, optimización de procesos y más.
 permalink: /
 ---
