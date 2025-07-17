@@ -11,7 +11,7 @@ permalink: /
 
 # 🏭 Bienvenidos a SantanaSmart
 
-![Fábrica moderna](https://images.pexels.com/photos/209251/pexels-photo-209251.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=400)
+![Fábrica moderna](https://images.pexels.com/photos/1476321/pexels-photo-1476321.jpeg)
 
 ### Asesoría Industrial Inteligente para Empresas que Quieren Crecer
 
@@ -21,7 +21,7 @@ En **SantanaMotors**, creemos que el verdadero motor del desarrollo industrial e
 
 ## 🛠 Nuestros Servicios
 
-![Automatización](https://images.pexels.com/photos/256510/pexels-photo-256510.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=400)
+![Automatización](https://images.pexels.com/photos/236709/pexels-photo-236709.jpeg)
 
 🔧 **Asesoría Técnica Industrial**  
 Diseño y mejora de procesos productivos, selección de maquinaria, planificación de planta y control de calidad.
@@ -42,7 +42,7 @@ Talleres especializados en robótica, electrónica aplicada, mantenimiento indus
 
 ## 🌐 ¿Por qué SantanaSmart?
 
-![Equipo de trabajo](https://images.pexels.com/photos/4164059/pexels-photo-4164059.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=400)
+![Equipo de trabajo](https://images.pexels.com/photos/2760241/pexels-photo-2760241.jpeg)
 
 - ✅ Experiencia técnica multidisciplinar  
 - ✅ Conocimiento profundo del ecosistema industrial de Linares  
